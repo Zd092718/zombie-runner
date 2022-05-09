@@ -1799,11 +1799,15 @@ PrefabInstance:
       objectReference: {fileID: 727541832}
     - target: {fileID: 9165916492357319443, guid: 8638a0549057dcb4db7ef13bba7e9adc, type: 3}
       propertyPath: chaseRange
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9165916492357319445, guid: 8638a0549057dcb4db7ef13bba7e9adc, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165916492357319446, guid: 8638a0549057dcb4db7ef13bba7e9adc, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8638a0549057dcb4db7ef13bba7e9adc, type: 3}
