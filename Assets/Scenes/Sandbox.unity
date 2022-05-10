@@ -432,6 +432,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8381762886077778689, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: GameOverCanvas
+      value: 
+      objectReference: {fileID: 2033873796}
+    - target: {fileID: 8381762886077778689, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 2033873796}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!1 &217488103
@@ -2732,7 +2740,7 @@ GameObject:
   - component: {fileID: 2033873794}
   m_Layer: 0
   m_Name: Game Over Canvas
-  m_TagString: Untagged
+  m_TagString: GameOverUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
