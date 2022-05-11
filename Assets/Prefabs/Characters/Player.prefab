@@ -354,6 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506806554}
+  - component: {fileID: 4949801563811632781}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -373,12 +374,25 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 398779189476737788}
   - {fileID: 3118150593718829165}
+  - {fileID: 398779189476737788}
   - {fileID: 5676126016281523760}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4949801563811632781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506806553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04ed856c8ef4444aaae9ffdc83c04c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &1242336718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -388,7 +402,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 398779188302630706, guid: 6423a9106e633b449a5ed0688557f3a4, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 398779188302630706, guid: 6423a9106e633b449a5ed0688557f3a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -481,11 +495,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 2000000}
-  range: 100
+  range: 50
   damage: 30
   muzzleFlash: {fileID: 494227059071813163}
   hitEffect: {fileID: 3379571560179533296, guid: 864d6bfcecfc7a44da0ccc48bc0a44f6, type: 3}
   ammoSlot: {fileID: 3706369387527607927}
+  timeBetweenShots: 1
 --- !u!114 &5750694450552370220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2000000}
+  fpsController: {fileID: 11400004}
   zoomedOut: 60
   zoomedIn: 30
   zoomedInSensitivity: 0.5
@@ -518,6 +534,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 3706369387527607927}
+    - target: {fileID: -7090043124162446448, guid: 0d42e06845dd98a4f9436d3923a758e8, type: 3}
+      propertyPath: timeBetweenShots
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7191219928043103653, guid: 0d42e06845dd98a4f9436d3923a758e8, type: 3}
       propertyPath: m_Name
       value: Shotgun
@@ -590,7 +610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1571873486410228196, guid: 050b8f89784d3b44fa285b5a719411e1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1571873486410228196, guid: 050b8f89784d3b44fa285b5a719411e1, type: 3}
       propertyPath: m_LocalScale.x
