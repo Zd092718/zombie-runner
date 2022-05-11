@@ -344,7 +344,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42ba3179ffc4d84fba10edf3db432e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 2
+    ammoAmount: 20
+  - ammoType: 1
+    ammoAmount: 8
 --- !u!1 &1506806553
 GameObject:
   m_ObjectHideFlags: 0
