@@ -11,6 +11,7 @@ public class FlashlightSystem : MonoBehaviour
 
     Light myLight;
 
+
     private void Start()
     {
         myLight = GetComponent<Light>();
@@ -22,6 +23,15 @@ public class FlashlightSystem : MonoBehaviour
         DecreaseLightIntensity();
     }
 
+    public void RestoreLightAngle(float restoreAngle)
+    {
+        myLight.spotAngle += restoreAngle;
+    }
+
+    public void RestoreLightIntensity(float intensityAmount)
+    {
+        myLight.intensity += intensityAmount;
+    }
     private void DecreaseLightIntensity()
     {
         myLight.range -= lightDecay * Time.deltaTime;
